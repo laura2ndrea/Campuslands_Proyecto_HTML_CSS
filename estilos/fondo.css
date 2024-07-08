@@ -30,3 +30,17 @@ body{
     align-items: center;
     position: relative;
 }
+@media (max-width: 480px) {
+    body {
+        display: none;
+    }
+    html {
+        content: "";
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/imgs/error-movil.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
