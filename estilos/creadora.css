@@ -1,0 +1,175 @@
+@font-face{
+    font-family: "Petit";
+    src: url(/fuentes/Petit-cochon.ttf);
+}
+h1{
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1em, 10vw, 3.5em);
+    color: white;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff;
+    transition: text-shadow 0.3s ease;
+}
+h1:hover{
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #F7C826,
+        0 0 50px #F7C826, 
+        0 0 60px #F7C826;
+}
+.container-secundario{
+    display: flex;
+    flex-direction: column;
+    height: 80vh; 
+}
+.container-superior{
+    flex: 1 0 40%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.container-inferior{
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.container-superior img{
+    position: absolute;
+    top: 18%;
+    width: 120px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.container-superior img:hover{
+    transform: scale(1.1);
+}
+.container-superior h2{
+    top: 43%;
+    margin-top: 4px;
+    position: absolute;
+    font-family: "Petit";
+    font-size: clamp(1em, 5vw, 2em);
+    color: #F7C826;
+}
+.tarjeta{
+    top:-10%;
+    position: relative;
+    width: 150px;
+    height: 225px;
+    margin: 20px;
+}
+.tarjeta .parte{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.tarjeta .adelante{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px;
+}
+.tarjeta .adelante img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tarjeta .adelante h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-family: "Petit";
+    font-size: 25px;
+    color: #F7C826;
+    text-align: center;
+    background: rgba(0,0,0,.4);
+}
+.tarjeta .atras{
+    transform: perspective(600px) rotateY(180deg);
+    background: #1A2973;
+    padding: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 10px #000;
+}
+.tarjeta .atras h3{
+    font-size: 20px;
+    font-family: "Petit";
+    color: #F7C826;
+    margin-top: 1px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.tarjeta .atras p{
+    font-size: 15px;
+    text-align: justify;
+}
+.tarjeta:hover .adelante{
+    transform: perspective(600px) rotateY(180deg);
+}
+.tarjeta:hover .atras{
+    transform: perspective(600px) rotateY(360deg);
+}
+#home{
+    margin: 2px;
+    width: 2.5em;
+    height: auto;
+    position: absolute;
+    top: 2.5%;
+    left: 94%;
+    transition: all 0.3s;
+}
+#home:hover{
+    transform: scale(1.5);
+}
+@media (max-width: 768px) {
+    #home {
+        width: 2em; 
+        left: 90%; 
+    }
+    .tarjeta{
+        top:2%;
+        position: relative;
+        width: 125px;
+        height: 175px;
+    }
+    .tarjeta .parte{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .tarjeta .adelante h3{
+        font-size: 20px;
+    }
+    .tarjeta .atras h3{
+        font-size: 15px;
+    }
+    .tarjeta .atras p{
+        font-size: 10px;
+    }
+}
