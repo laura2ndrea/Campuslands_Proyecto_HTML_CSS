@@ -29,7 +29,7 @@ Este proyecto es una Landing Page dedicada a Sailor Moon, creada como parte de l
 
 - **historia.css:** esta hoja de estilos define la apariencia y estructura para el documento historia.html, utiliza las fuentes "Libre Franklin" y "Sensei". El cuerpo de la página tiene un fondo de imagen fija y cubre toda la altura de la ventana. El contenedor principal está organizado en una cuadrícula con un encabezado y dos secciones principales. El encabezado contiene un título estilizado con efectos de sombra y un enlace con imagen que se amplía al pasar el cursor. Las secciones izquierda y derecha están centradas verticalmente y contienen contenedores con textos e imágenes que cambian de tamaño al interactuar. Una animación muestra una línea de tiempo entre las secciones. La hoja también incluye estilos responsivos para tabletas, ajustando tamaños y posiciones, y una pantalla de "no disponible" para dispositivos móviles.
   
-    - **Diseño original:** 
+  - **Diseño original:** 
   
    ![home](/imagenes-readme/historia-can.png)
 
@@ -37,38 +37,42 @@ Este proyecto es una Landing Page dedicada a Sailor Moon, creada como parte de l
   
   ![home](/imagenes-readme/historia-pag.png)
   
-- **personajes.css:** el encabezado (h1) tiene una fuente "Libre Franklin", un tamaño de fuente adaptable, y efectos de sombra que se intensifican al pasar el cursor. El contenedor secundario utiliza un diseño de cuadrícula (grid) para organizar elementos en filas y columnas. Las tarjetas tienen un diseño centrado, con esquinas redondeadas y sombras, y su imagen se agranda al pasar el cursor. La superposición en las tarjetas se expande para mostrar más contenido al pasar el cursor, incluyendo un título con la fuente "Petit" y un enlace estilizado. Un botón de inicio (#home) se posiciona en la esquina superior derecha y aumenta de tamaño al interactuar. La hoja de estilos también incluye ajustes para pantallas más pequeñas, reduciendo el tamaño de las tarjetas y el botón de inicio para mejorar la adaptabilidad y la experiencia del usuario.
+- **personajes.css:** esta hoja de estilos utiliza las fuentes "Libre Franklin", "Sensei" y "Petit", y define un diseño responsivo con un contenedor principal centrado que tiene un fondo con imagen fija. El encabezado incluye un título con efectos de sombra y un enlace a la página principal. Las tarjetas dentro del contenedor principal están dispuestas en una cuadrícula, con imágenes que aumentan de tamaño al pasar el cursor y un overlay que aparece con un título y un enlace. Además, se aplican estilos específicos para tabletas, ajustando el ancho de las tarjetas, y para teléfonos, ocultando el cuerpo de la página y mostrando una imagen de "no disponible".
 
-  (Diseño original)
+  - **Diseño original:** 
   
-  ![personajes](/imagenes-readme/personajes-can.png)
+   ![home](/imagenes-readme/personajes-can.png)
+
+  - **Página web:**
   
-  (Página web)
+  ![home](/imagenes-readme/personajes-pag.png)
   
-  ![personajes](/imagenes-readme/personajes-pag.png)
-  
-- **creadora.css:** los contenedores principales se estructuraron usando flexbox y grid, y las tarjetas tienen una animación de volteo en el hover, mostrando diferentes caras con contenido distinto. Además, hay estilos específicos para una imagen con transición de escala, y ajustes para dispositivos móviles mediante media queries, asegurando una presentación adecuada en diferentes tamaños de pantalla.
+- **creadora.css:** esta hoja de estilos define una estructura de diseño responsivo con un contenedor principal centrado, un encabezado con efectos de sombra en el título, y dos secciones: una izquierda que contiene una imagen redonda con un título estilizado y una derecha con una cuadrícula de tarjetas interactivas que giran para mostrar contenido en su parte trasera. Utiliza las fuentes "Libre Franklin", "Sensei" y "Petit", y establece un fondo fijo para la página. Además, incluye estilos específicos para tabletas, ajustando la disposición de las secciones, y para teléfonos, ocultando el contenido y mostrando una imagen de "no disponible".
    
-  (Diseño original)
+  - **Diseño original:** 
   
-  ![creadora](/imagenes-readme/creadora-can.png)
+   ![home](/imagenes-readme/creadora-can.png)
+
+  - **Página web:**
   
-  (Página web)
+  ![home](/imagenes-readme/creadora-pag.png)
   
-  ![creadora](/imagenes-readme/creadora-pag.png)
-  
-- **galeria.css:** la clase .container-secundario organiza un diseño de cuadrícula para imágenes y videos, con transiciones de escala en hover y configuraciones específicas para ciertos elementos de la cuadrícula. Un icono con el identificador #home en la esquina superior derecha también se escala al pasar el cursor sobre él. Se incluyen reglas de medios para ajustar el tamaño y la posición del icono en pantallas más pequeñas.
+- **galeria.css:** esta hoja de estilos define un diseño responsivo con un contenedor principal centrado que incluye un encabezado con título animado y una galería de imágenes organizadas en una cuadrícula. Utiliza la fuente "Libre Franklin" para el encabezado y establece un fondo fijo para la página. La galería está estructurada en cuatro columnas y dos filas, con imágenes que ocupan diferentes espacios dentro de la cuadrícula para crear un diseño visualmente dinámico. Además, se proporciona un estilo específico para dispositivos móviles que oculta el contenido y muestra una imagen alternativa cuando la pantalla tiene un ancho máximo de 576px.
    
-  (Diseño original)
+  - **Diseño original:** 
   
-  ![galeria](/imagenes-readme/galeria-can.png)
+   ![home](/imagenes-readme/galeria-can.png)
+
+  - **Página web:**
   
-  (Página web)
+  ![home](/imagenes-readme/galeria-pag.png)
   
-  ![galeria](/imagenes-readme/galeria-pag.png)
 - **pantalla no-disponible:**
+  
   ![error](/recursos/no-disponible.png)
   
 ## Tecnologías 
-- **HTML5:** utilizado para estructurar y organizar el contenido de la página web, asegurando que sea semánticamente correcta y accesible. 
+
+- **HTML5:** utilizado para estructurar y organizar el contenido de la página web, asegurando que sea semánticamente correcta y accesible.
+  
 - **CSS3:** utilizado para dar estilo y diseño a la página web. Con CSS3, se aplicaron estilos avanzados como transiciones, animaciones, y efectos de transformación. También se implementaron reglas de medios para asegurar que el diseño sea responsive y se adapte a diferentes tamaños de pantalla y dispositivos, proporcionando una experiencia de usuario consistente y atractiva.
