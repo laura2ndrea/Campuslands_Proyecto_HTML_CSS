@@ -13,7 +13,7 @@ Este proyecto es una Landing Page dedicada a Sailor Moon, creada como parte de l
 - **fondo.css:** define la apariencia del fondo de todas las páginas web con una fuente personalizada "Sensei" y la importación de la familia de fuentes "Libre Franklin" desde Google Fonts. Establece un fondo de cuerpo con una imagen ajustada para cubrir la pantalla y utiliza flexbox para centrar el contenido vertical y horizontalmente. El contenedor principal tiene un fondo semitransparente y esquinas redondeadas, adaptándose a diferentes tamaños de pantalla.Además, incluye una media query para dispositivos móviles que oculta el cuerpo y muestra una imagen de error como fondo cuando la pantalla es igual o menor a 480px de ancho.
 
   (Pantalla error)
-  ![error](/imagenes-readme/error-movil.png)
+  ![error](/recursos/no-disponible.png)
   
 - **home.css**: la clase .header establece un encabezado con un diseño flexbox que alinea los elementos a la derecha, incluyendo un logo que rota al pasar el cursor sobre él. El menú de navegación (nav) presenta enlaces con estilos interactivos, como cambios de tamaño al pasar el cursor y transiciones de color y fondo. El contenido principal (main) y sus contenedores (container-izquierdo y container-derecho) utilizan flexbox para centrar y distribuir elementos de manera uniforme. Los estilos de texto (titulo y descripcion) y botones (boton) están diseñados con transiciones suaves y efectos de sombra al interactuar. Además, la sección de redes sociales (redes) se posiciona fija en el lado derecho de la pantalla, con íconos que aumentan de tamaño al pasar el cursor. Se incluyen también media queries para ajustar el diseño en dispositivos con pantallas más pequeñas.
 
