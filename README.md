@@ -1,17 +1,22 @@
 # Landing Page (Sailor Moon) 
-Este proyecto es una Landing Page dedicada a Sailor Moon, creada como parte de la evaluación de habilidades en CSS y HTML. La página contiene información sobre Sailor Moon, incluyendo su historia, personajes principales y otros detalles relevantes del universo de Sailor Moon.
-## Información general 
-### Semántica (HTML) 
-- **home.html:** la pagina esta dividida principalmente en dos secciones:
-  - **header**: se encuentra el logo de la página y el menú de navegación.
-  - **main**: se encuentra el contenido principal de la página, se divide en dos partes, en la sección de la izquierda se encuentra el título y una breve descripción de la página, y en la sección derecha una imagen de las Sailor Scouts.
-- **historia.html:** esta página muestra una línea de tiempo acerca de la historia de Sailor Moon. Se dividio en dos secciones, y en cada sección hay tres div que indican cada uno una parte de la línea de tiempo. 
-- **personajes.html**: en esta página se muestran a los principales personajes, en cada imagen se puede acceder a un enlace que lleva a la página en Wiki del mismo, donde se puede conseguir información más detallada. Cada personaje se guardo dentro de una etiqueta article.
-- **creadora.html**: está página tiene información acerca de la escritora del manga. Esta dividida en dos secciones, en la seccion superior tiene una imagen de la creadora junto con su nombre. Y en la sección inferior se encuentra una pequeña biografía, y sobre el estilo y la obra de la autora, cada uno dentro de una etiqueta article.
-- **galería.html**: en esta página se encuentra algunas fotos y videos de la serie animada. Cada imagen (o video) se encuentra dentro de un div todos de clase imagen. 
-### Apariencia (CSS) 
-- **fondo.css:** define la apariencia del fondo de todas las páginas web con una fuente personalizada "Sensei" y la importación de la familia de fuentes "Libre Franklin" desde Google Fonts. Establece un fondo de cuerpo con una imagen ajustada para cubrir la pantalla y utiliza flexbox para centrar el contenido vertical y horizontalmente. El contenedor principal tiene un fondo semitransparente y esquinas redondeadas, adaptándose a diferentes tamaños de pantalla.Además, incluye una media query para dispositivos móviles que oculta el cuerpo y muestra una imagen de error como fondo cuando la pantalla es igual o menor a 480px de ancho.
 
+Este proyecto es una Landing Page dedicada a Sailor Moon, creada como parte de la evaluación de habilidades en CSS y HTML. La página contiene información sobre Sailor Moon, incluyendo su historia, personajes principales y otros detalles relevantes del universo de Sailor Moon.
+
+## Información general 
+
+### Semántica (HTML) 
+
+- **home.html:** este documento representa una página de inicio dedicada a Sailor Moon. En el <head>, se especifican los metadatos, incluyendo el juego de caracteres, la configuración de visualización y los enlaces a los recursos como el icono y la hoja de estilos CSS. En el <body>, la estructura principal incluye un contenedor que abarca un encabezado (<header>) con el logo y la navegación, un <main> dividido en dos secciones: la izquierda con el título y la descripción, y la derecha con una imagen. Además, hay una sección de redes sociales con enlaces a Facebook, Instagram y YouTube.
+  
+- **historia.html:** este documento se centra en la historia de Sailor Moon. En el <head>, se definen los metadatos, incluyendo el juego de caracteres, la configuración de visualización, el icono de la página y la hoja de estilos CSS. El <body> contiene un contenedor principal con un encabezado (<header>) que incluye el título "HISTORIA" y un enlace a la página de inicio. El contenido principal está dividido en dos secciones: la izquierda y la derecha, cada una con varios contenedores que presentan imágenes y textos que describen eventos significativos en la historia de Sailor Moon desde su creación en 1991 hasta el estreno de "Sailor Moon Eternal" en 2021.
+  
+- **personajes.html**: este documento está diseñado para mostrar información sobre los personajes de Sailor Moon. En el <head>, se especifican los metadatos, incluyendo el juego de caracteres, la configuración de visualización, el icono de la página y la hoja de estilos CSS. En el <body>, se encuentra un contenedor principal que incluye un encabezado (<header>) con el título "PERSONAJES" y un enlace a la página de inicio. El contenido principal consiste en un contenedor de tarjetas, cada una representando a un personaje diferente con una imagen, un título y un enlace que dirige a más información sobre el personaje en el sitio fandom de Sailor Moon.
+  
+- **creadora.html**: este documento presenta información sobre Naoko Takeuchi, la creadora de Sailor Moon. En el <head>, se incluyen los metadatos esenciales como el juego de caracteres, la configuración de visualización, el icono de la página y la hoja de estilos CSS. En el <body>, hay un contenedor principal que alberga un encabezado (<header>) con el título "CREADORA" y un enlace a la página de inicio. El contenido está dividido en dos secciones: la izquierda muestra una imagen de Naoko Takeuchi y su nombre, mientras que la derecha contiene tres tarjetas que detallan su biografía, estilo y obra, con imágenes y descripciones en el frente y el reverso de cada tarjeta.
+  
+- **galería.html**: este documento muestra una galería de Sailor Moon. En el <head>, se definen los metadatos como el juego de caracteres, la configuración de visualización, el icono de la página y la hoja de estilos CSS. En el <body>, hay un contenedor principal que incluye un encabezado (<header>) con el título "GALERÍA" y un enlace a la página de inicio. La sección de la galería contiene varios elementos que muestran imágenes y un video relacionado con Sailor Moon, cada uno con su respectivo recurso gráfico.
+  
+### Apariencia (CSS) 
   (Pantalla error)
   ![error](/recursos/no-disponible.png)
   
@@ -54,6 +59,7 @@ Este proyecto es una Landing Page dedicada a Sailor Moon, creada como parte de l
   (Página web)
   
   ![galeria](/imagenes-readme/galeria-pag.png)
+- **pantalla no-disponible:**
   
 ## Tecnologías 
 - **HTML5:** utilizado para estructurar y organizar el contenido de la página web, asegurando que sea semánticamente correcta y accesible. 
