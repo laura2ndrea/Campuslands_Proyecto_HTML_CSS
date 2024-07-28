@@ -4,7 +4,7 @@ Este proyecto es una landing page dedicada a Sailor Moon, creada como parte de l
 ## Contenido 
 1. [Información general](#info-general)
 2. [Tecnologías](#tecno)
-3. [Instalacion](#install)
+3. [Instalación y ejecución](#install)
 4. [Autores](#autores)
 
 ---
