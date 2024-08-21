@@ -248,6 +248,14 @@ body {
     transform: scale(1.5);
 }
 
+.nav_close .nav_icon{
+    width: 10%;
+}
+
+.nav_icon{
+    width: 15%;
+}
+
 /* Estructura para tablet*/
 @media (max-width: 991px) {
     .imagen{
@@ -276,9 +284,21 @@ body {
         width: 1.8rem;
         height: auto;
     }
+
+    .container{
+        margin: auto 0; 
+        width: 90%; 
+        max-width: 1200px;
+        overflow: hidden;
+    }
+
+    .navegador ul li{
+        padding: 40px 0;
+        display: inline; 
+    }
 }
 
-/* Estructura para teléfono falta redes, ademas de animacion y el menu*/
+/* Estructura para teléfono y el menu*/
 @media (max-width: 671px) {
     .main{
         display: flex;
@@ -298,10 +318,32 @@ body {
         display: flex;
         align-items: center;
         flex: 1 1 auto;
+        background-color: blue;
+    }
+
+    @keyframes entrar {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .redes {
+        right: 10%;
+    }
+
+    .redes img {
+        width: 1.5rem;
+        height: auto;
     }
 }
 
-/* Estructura pantalla muy pequeña */
+/* Estructura pantalla muy pequeña ESTO TAMBIEN FALTA*/
 @media (max-width: 330px) {
     body {
         display: none;
