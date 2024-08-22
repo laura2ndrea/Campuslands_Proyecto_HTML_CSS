@@ -117,11 +117,11 @@ body{
 .texto{
     width: 80%;
     margin-left: 20px;
-    font-size: calc(1vw + 0.15em);
+    font-size: calc(1vw + 0.2em);
 }
 /* Estilos de las imagenes dentro de los containers */
 img{
-    width: 25%;
+    width: 30%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.5s;
@@ -133,7 +133,7 @@ img:hover{
 .seccion-izquierda::after, .seccion-derecha::after{
     content: '';
     position: absolute;
-    width:3px;
+    width:2.5px;
     background-color: white;
     top:2.5%;
     left: 48.2%;
@@ -160,49 +160,97 @@ img:hover{
 }
 .flecha-izquierda {
     border-right: 10px solid white; /* Color y tamaño de la flecha izquierda */
-    left: -3.5%; /* Ajusta la posición izquierda */
+    left: -2.6%; /* Ajusta la posición izquierda */
 }
 .flecha-derecha {
     border-left: 10px solid white; /* Color y tamaño de la flecha derecha */
-    right: -3.5%; /* Ajusta la posición derecha */
+    right: -2.6%; /* Ajusta la posición derecha */
 }
 /* Estructura para tablet */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .container-izquierdo, .container-derecho{
-        height: 20%;
+        height: 15%;
     }
+
     .texto{
         width: 80%;
         margin-left: 20px;
-        font-size: calc(0.5vw + 0.3em);
+        font-size: calc(0.5vw + 0.4em);
     }
+
     img{
-        width: 30%;
+        width: 35%;
         height: auto;
         border-radius: 10px;
         transition: transform 0.5s;
+        z-index: 2;
     }
+
     .flecha-izquierda,
     .flecha-derecha {
         border-top-width: 8px; 
         border-bottom-width: 8px;
     }
+
     .seccion-izquierda::after, .seccion-derecha::after{
         content: '';
         position: absolute;
         width:1px;
         background-color: white;
         top:2.5%;
-        left: 50%;
+        left: 49%;
         margin-left: -3px;
         animation: aparecer 1.5s forwards;
     }
+
+    .flecha-izquierda {
+        left: -3.5%; /* Ajusta la posición izquierda */
+    }
+    .flecha-derecha {
+        right: -3.5%; /* Ajusta la posición derecha */
+    }
 }
 /* Estructura para teléfono */
-@media (max-width: 576px) {
-    body{
+@media (max-width: 675px) {
+    .container-principal{
+        height: calc(100vh - 100%);
+        display: grid;
+        grid-template: 
+            "header"
+            "seccion-izquierda"
+            "seccion-derecha";
+    }
+
+    .seccion-izquierda .seccion-derecha{
+        align-items: start;
+    }
+
+    .container-izquierdo, .container-derecho{
+        height: 20%;
+    }
+    .texto{
+        width: 90%;
+        font-size: calc(0.5vw + 0.6em);
+    }
+    img{
+        width: 40%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.5s;
+    }
+
+    .seccion-izquierda::after, .seccion-derecha::after{
+        left: 49%;
+    }
+    
+}
+
+/* Estructura pantalla muy pequeña*/
+@media (max-width: 330px) {
+    body {
         display: none;
     }
+
     html {
         content: "";
         display: block;

@@ -160,6 +160,7 @@ body {
 
 /* Estilos en la descripción */
 .descripcion {
+    margin-top: 10%;
     width: 95%;
     text-align: center;
 }
@@ -167,7 +168,7 @@ body {
 .descripcion p {
     font-size: calc(0.8vw + 0.6em);
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* Estilos enlace a otra página */
@@ -402,7 +403,7 @@ body {
     }
 }
 
-/* Estructura pantalla muy pequeña ESTO TAMBIEN FALTA*/
+/* Estructura pantalla muy pequeña*/
 @media (max-width: 330px) {
     body {
         display: none;
