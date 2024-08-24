@@ -225,7 +225,7 @@ img:hover{
     }
     .texto{
         width: 90%;
-        font-size: calc(0.5vw + 0.6em);
+        font-size: calc(0.5vw + 0.4em);
     }
     img{
         width: 30%;
