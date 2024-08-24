@@ -169,7 +169,7 @@ img:hover{
 /* Estructura para tablet */
 @media (max-width: 991px) {
     .container-izquierdo, .container-derecho{
-        height: 35%;
+        height: 15%;
     }
 
     .texto{
@@ -220,15 +220,20 @@ img:hover{
             "seccion-izquierda"
             "seccion-derecha";
     }
+
+    .seccion-izquierda .seccion-derecha{
+        align-items: start;
+    }
+
     .container-izquierdo, .container-derecho{
-        height: 30%;
+        height: 20%;
     }
     .texto{
         width: 90%;
         font-size: calc(0.5vw + 0.4em);
     }
     img{
-        width: 30%;
+        width: 40%;
         height: auto;
         border-radius: 10px;
         transition: transform 0.5s;

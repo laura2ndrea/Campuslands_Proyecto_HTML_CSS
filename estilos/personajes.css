@@ -156,13 +156,26 @@ body{
     height: 100%;
 }
 /* Estructura para tablet */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .tarjetas{
         width: 100%;
     }
 }
+
+@media (max-width: 675px){
+    .container-principal{
+        height: calc(100vh + 20%); 
+    }
+    .container-tarjetas{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr)
+    }
+    .tarjetas{
+        width: 80%; 
+    }
+}
 /* Estructura para teléfono */
-@media (max-width: 576px) {
+@media (max-width: 330px) {
     body{
         display: none;
     }
