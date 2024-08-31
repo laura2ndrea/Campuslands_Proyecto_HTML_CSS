@@ -305,7 +305,16 @@ body {
     }
 
     .imagen {
-        width: calc(100vw - 75%);
+        position: absolute;
+        width: calc(100vw - 76%);
+    }
+
+    .titulo h1{
+        font-size: 3em;
+    }
+
+    .titulo .word-s{
+        margin-top: 25%;
     }
 
     .seccion-izquierda {
