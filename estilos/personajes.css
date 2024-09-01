@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: "Sensei";
     background-image: url("/recursos/fondo.jpg");
@@ -19,7 +20,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
     padding: 20px;
 }
 .container-principal{
@@ -27,8 +27,8 @@ body{
     background-color: rgb(26, 41, 115, 0.55);
     border-radius: 20px;
     margin: auto;
-    width: calc(100vw - 40px); 
-    height: calc(100vh - 40px);
+    width: calc(100vw - 35px); 
+    height: calc(100vh - 35px);
     padding: 10px;
 
     /* Estructura del container */
@@ -157,24 +157,42 @@ body{
 }
 /* Estructura para tablet */
 @media (max-width: 991px) {
+    .container-principal{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .tarjetas{
+        margin-bottom: 40px;
+        margin-top: 20px;
         width: 100%;
     }
 }
 
 @media (max-width: 675px){
-    .container-principal{
-        height: calc(100vh + 20%); 
-    }
+        .container-principal{
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            }
     .container-tarjetas{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr)
     }
     .tarjetas{
-        width: 80%; 
+        margin-bottom: 20px;
+        width: 70%; 
+    }
+    .header a{
+        position: relative;
+        right: 4%;
+    }
+    .header a img{
+        width: 2em;
     }
 }
-/* Estructura para teléfono */
+/* Estructura para pantalla muy pequeña */
 @media (max-width: 330px) {
     body{
         display: none;
