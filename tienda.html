@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/recursos/icono.png">
+    <link rel="stylesheet" href="/estilos/tienda.css">
+    <title>Sailor Moon | Historia</title>
+</head>
+
+<body>
+    <div class="container-principal">
+        <!--Sección del encabezado-->
+        <header class="header">
+            <h1>TIENDA</h1>
+            <!--Enlace a la página home-->
+            <a href="home.html"><img src="/recursos/home.png" alt="volver a home"></a>
+            <button id="show-cart-btn">
+                🛒 <span id="carrito-contador">(0)</span>
+            </button>
+        </header>
+
+        <main>
+            <div id="filtros">
+                <h2>Filtrar por Categoría</h2>
+                <select id="categoria-filtro">
+                    <option value="">Todas las categorías</option>
+                    <option value="ropa">Ropa</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="juguetes">Juguetes</option>
+                </select>
+            </div>
+            <div id="producto-lista"></div>
+        </main>
+    
+        <div id="carrito-modal" class="modal">
+            <div class="modal-contenido">
+                <span id="cerrar-modal" class="cerrar">&times;</span>
+                <h2>Carrito de compras</h2>
+                <div id="carrito-detalles"></div>
+                <h3>Total: $<span id="carrito-total">0.00</span></h3>
+                <button id="checkout-btn">Finalizar compra</button>
+                <div id="carrito-detalles"></div>
+            </div>
+        </div>
+    
+        <script src="tienda.js"></script>
+</body>
+</html>
