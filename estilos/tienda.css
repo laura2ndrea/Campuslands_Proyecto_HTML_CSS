@@ -24,7 +24,7 @@ body{
     border-radius: 20px;
     margin: auto;
     width: calc(100vw - 40px); 
-    height: calc(100vh - 35px);
+    height: 100%; 
     padding: 10px;
 }
 .header{
@@ -72,12 +72,12 @@ body{
 button {
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
+    cursor: url("/recursos/cursor.png"), auto;
     border: none;
     border-radius: 5px;
 }
 #mostrar-carrito-boton {
-    background-color: #ff66b2;
+    background-color: #F7C826;
     color: white;
     position: fixed; 
     bottom: 20px; 
@@ -85,10 +85,14 @@ button {
     display: flex;
     align-items: center;
     z-index: 1000; 
+    cursor: pointer; 
+    font-family: "Sensei";
+    border-radius: 15px;
 }
 
 button#pagar-btn {
-    background-color: #ff66b2;
+    background-color: #F7C826;
+    font-family: "Sensei";
     color: white;
     margin-top: 10px;
 }
@@ -97,51 +101,92 @@ main {
     padding: 20px;
 }
 
-#filters {
+#filtros {
     margin-bottom: 20px;
 }
 
+#filtros h2{
+    font-size: 20px;
+    color: white;
+}
+
 #filtros select {
+    margin-top: 10px;
     padding: 10px;
     font-size: 16px;
+    font-family: "Sensei";
+    background-color: rgb(26, 41, 115, 0.60); 
+    color: white;
+    border:solid white;
+    border-radius: 5px;
+    cursor: url("/recursos/cursor.png"), auto;
 }
 
 #producto-lista {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .producto-tarjeta {
-    border: 1px solid #ddd;
+    border: solid white;
+    align-self: center;
+    width: 100%;
+    min-height: 100%;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color:  rgb(26, 41, 115, 0.60); 
     position: relative;
+    color: white;
 }
 
 .producto-tarjeta img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .producto-tarjeta h3 {
     margin: 10px 0;
 }
 
-.producto-tarjeta input {
-    width: 60px;
-    text-align: center;
+.producto-tarjeta p{
+    margin-top: 5px;
 }
 
+.producto-tarjeta input {
+    width: 50px;
+    height: 30px;
+    text-align: center; 
+    background-color: white;
+    font-family: "Sensei";
+    border: solid white;
+    border-radius: 15px;
+
+}
+
+.producto-tarjeta button{
+    font-family: "Sensei";
+    margin-top: 10px;
+    border: solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s;
+}
+.producto-tarjeta button:hover {
+    background-color: white; 
+    color: rgb(26, 41, 115);
+        
+}
 .producto-tarjeta .cantidad-disponible {
     color: #555;
     font-size: 14px;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -157,18 +202,25 @@ main {
 }
 
 .modal-contenido {
-    background-color: white;
+    background-color:  white; 
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: 15px;
     position: relative;
 }
 
+.modal-contenido p{
+    margin: 10px;
+}
+
+#carrito-modal h3{
+    margin-top: 10px; 
+}
+
 .cerrar {
-    color: #aaa;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -176,13 +228,13 @@ main {
 
 .cerrar:hover,
 .cerrar:focus {
-    color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 .carrito-item button {
-    background-color: #ff6666;
+    background-color: red;
+    font-family: "Sensei"; 
     color: white;
     border: none;
     padding: 5px 10px;
@@ -201,5 +253,22 @@ main {
 @media (max-width: 480px) {
     button {
         font-size: 14px;
+    }
+}
+
+/* Estructura para pantalla muy pequeña */
+@media (max-width: 330px) {
+    body {
+        display: none;
+    }
+
+    html {
+        content: "";
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/recursos/no-disponible.png');
+        background-size: cover;
+        background-position: center;
     }
 }

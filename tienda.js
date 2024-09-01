@@ -23,7 +23,7 @@ function mostrarProductos(productos) {
         const productoTarjeta = document.createElement("div");
         productoTarjeta.className = "producto-tarjeta";
         productoTarjeta.innerHTML = `
-            <img src="${producto.image}" alt="${producto.name}" width="150">
+            <img src="${producto.imagen}" alt="${producto.nombre}" width="150">
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
             <p>Precio: $${producto.precio.toFixed(2)}</p>
@@ -56,11 +56,11 @@ function agregarAlCarrito(productoId) {
     const cantidadDeseada = parseInt(cantidadInput.value);
 
     if (producto && cantidadDeseada > 0 && cantidadDeseada <= producto.cantidad) {
-        const carritoItem= carrito.find(item => item.id === productoId);
+        const carritoItem = carrito.find(item => item.id === productoId);
         if (carritoItem) {
             carritoItem.cantidad += cantidadDeseada;
         } else {
-            carrito.push({ id: productoId, nombre: product.nombre, precio: producto.precio, cantidad: cantidadDeseada });
+            carrito.push({ id: productoId, nombre: producto.nombre, precio: producto.precio, cantidad: cantidadDeseada });
         }
         producto.cantidad -= cantidadDeseada;
         localStorage.setItem("productos", JSON.stringify(productos));
@@ -69,7 +69,7 @@ function agregarAlCarrito(productoId) {
         mostrarProductos(productos);
         mostrarCarrito();
     } else {
-        alert("Cantidad invalida o fuera de stock");
+        alert("Cantidad inválida o fuera de stock.");
     }
 }
 
@@ -101,7 +101,7 @@ function mostrarCarrito() {
             <p>${item.nombre} - $${item.precio.toFixed(2)} x ${item.cantidad}</p>
             <button onclick="eliminarDeCarrito(${item.id})">Eliminar</button>
         `;
-        carritoDetallesDiv.appendChild( carritoItem);
+        carritoDetallesDiv.appendChild(carritoItem);
         total += item.precio * item.cantidad;
     });
     document.getElementById("carrito-total").textContent = total.toFixed(2);
@@ -113,10 +113,10 @@ function eliminarDeCarrito(productoId) {
     const carritoItemIndex = carrito.findIndex(item => item.id === productoId);
 
     if (carritoItemIndex > -1) {
-        const carritoItem = cart[carritoItemIndex];
+        const carritoItem = carrito[carritoItemIndex];
         carrito.splice(carritoItemIndex, 1);
         if (producto) {
-            producto.cantidad += carritoItem.cantidad; 
+            producto.cantidad += carritoItem.cantidad; // Agregar la cantidad de vuelta al inventario
         }
         localStorage.setItem("productos", JSON.stringify(productos));
         localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -128,7 +128,7 @@ function eliminarDeCarrito(productoId) {
 
 function actualizarCarritoCantidad() {
     const carritoCantidad = carrito.reduce((total, item) => total + item.cantidad, 0);
-    document.getElementById("carrito-cantidad").textContent = carritoCantidad;
+    document.getElementById("carrito-contador").textContent = carritoCantidad;
 }
 
 function pagar() {
