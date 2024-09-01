@@ -1,52 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face{
+
+@font-face {
     font-family: "Sensei";
     src: url(/fuentes/Sensei.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: "Petit";
     src: url(/fuentes/Petit-cochon.ttf);
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Sensei";
     background-image: url("/recursos/fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
     padding: 20px;
 }
-.container-principal{
+
+.container-principal {
     /* Apariencia del container */
     background-color: rgb(26, 41, 115, 0.55);
     border-radius: 20px;
     margin: auto;
-    width: calc(100vw - 40px); 
+    width: calc(100vw - 40px);
     height: calc(100vh - 40px);
     padding: 10px;
 
     /* Estructura del container */
     display: grid;
     gap: 20px;
-    grid-template: 
-    "header header" calc(20% - 20px)
-    "seccion-izquierda seccion-derecha"/ 25%;
+    grid-template:
+        "header header" calc(20% - 20px) "seccion-izquierda seccion-derecha" / 25%;
 }
+
 /* Estilos del header de la página */
-.header{
+.header {
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 10%;
 }
-.header h1{
+
+.header h1 {
     position: relative;
     left: -10%;
     font-family: "Libre Franklin", sans-serif;
@@ -59,60 +64,70 @@ body{
         0 0 15px #fff;
     transition: text-shadow 0.3s ease;
 }
-.header h1:hover{
+
+.header h1:hover {
     text-shadow:
         0 0 10px #fff,
         0 0 20px #fff,
         0 0 30px #fff,
         0 0 40px #F7C826,
-        0 0 50px #F7C826, 
+        0 0 50px #F7C826,
         0 0 60px #F7C826;
 }
+
 /* Estilos del enlace a home */
-.header a{
+.header a {
     position: relative;
     right: -10%;
 }
-.header a img{
+
+.header a img {
     width: 2.5em;
     height: auto;
     transition: transform 0.3s;
 }
-.header a img:hover{
+
+.header a img:hover {
     transform: scale(1.5);
 }
+
 /* Estructura de la sección izquierda */
-.seccion-izquierda{
+.seccion-izquierda {
     grid-area: seccion-izquierda;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
+
 /* Estilos de la imagen dentro de la sección izquierda */
-.seccion-izquierda img{
+.seccion-izquierda img {
     width: 70%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
     transition: transform 0.5s;
 }
-.seccion-izquierda img:hover{
+
+.seccion-izquierda img:hover {
     transform: scale(1.2);
 }
+
 /* Estilos para el titulo de la izquierda */
-.seccion-izquierda h2{
+.seccion-izquierda h2 {
     font-family: "Petit";
     font-size: clamp(1em, 5vw, 2.5em);
     text-align: center;
     color: #F7C826;
     transition: transform 0.5s;
 }
-.seccion-izquierda h2:hover{
+
+.seccion-izquierda h2:hover {
     transform: scale(1.2);
 }
+
 /* Estructura de la sección derecha */
-.seccion-derecha{
+.seccion-derecha {
     grid-area: seccion-derecha;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -124,13 +139,15 @@ body{
     border-radius: 20px;
     margin: 20px;
 }
+
 /* Estilos de la tarjeta */
-.tarjeta{
+.tarjeta {
     position: relative;
     width: 70%;
     height: 80%;
 }
-.tarjeta .parte{
+
+.tarjeta .parte {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -139,21 +156,25 @@ body{
     overflow: hidden;
     transition: transform .5s;
 }
+
 /* Estilos en la parte de adelante de la tarjeta */
-.tarjeta .adelante{
+.tarjeta .adelante {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px;
 }
-.tarjeta:hover .adelante{
+
+.tarjeta:hover .adelante {
     transform: perspective(600px) rotateY(180deg);
 }
-.tarjeta .adelante img{
+
+.tarjeta .adelante img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.tarjeta .adelante h3{
+
+.tarjeta .adelante h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -163,10 +184,11 @@ body{
     font-size: clamp(0.5em, 3.5vw, 1.5em);
     color: #F7C826;
     text-align: center;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
 }
+
 /* Estilos en la parte de atras de la tarjeta */
-.tarjeta .atras{
+.tarjeta .atras {
     transform: perspective(600px) rotateY(180deg);
     background: #1A2973;
     padding: 20px;
@@ -176,10 +198,12 @@ body{
     justify-content: center;
     box-shadow: 0 5px 10px #000;
 }
-.tarjeta:hover .atras{
+
+.tarjeta:hover .atras {
     transform: perspective(600px) rotateY(360deg);
 }
-.tarjeta .atras h3{
+
+.tarjeta .atras h3 {
     font-size: clamp(0.5em, 2vw, 1em);
     font-family: "Petit";
     color: #F7C826;
@@ -187,32 +211,77 @@ body{
     letter-spacing: 2px;
     text-align: center;
 }
-.tarjeta .atras p{
+
+.tarjeta .atras p {
     font-size: clamp(0.5em, 2vw, 1em);
     text-align: justify;
 }
+
 /* Estructura para tablet*/
-@media (max-width: 768px) {
-    .seccion-izquierda{
+@media (max-width: 991px) {
+    .seccion-izquierda {
         margin-left: 20px;
     }
-    .seccion-izquierda img{
+
+    .seccion-izquierda img {
         width: 100%;
         height: auto;
         border-radius: 50%;
         margin-bottom: 20px;
         transition: transform 0.5s;
     }
-    .seccion-derecha{
+
+    .seccion-derecha {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 }
+
 /* Estructura para teléfono */
-@media (max-width: 576px) {
-    body{
+@media (max-width: 675px) {
+    .container-principal{
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-izquierda img{
+        width: calc(20vw - 5px);
+    }
+    .seccion-derecha{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+    }
+    .tarjeta{
+        margin: 10px;
+    }
+
+    .tarjeta .atras p {
+        font-size: calc(1em - 5px); 
+        text-align: left;
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-izquierda img{
+        width: calc(20vw - 1px);
+    }
+   
+    .tarjeta .atras p {
+        font-size: calc(1em - 8px); 
+    }
+}
+
+/* Estructura para pantalla muy pequeña */
+@media (max-width: 330px) {
+    body {
         display: none;
     }
+
     html {
         content: "";
         display: block;
