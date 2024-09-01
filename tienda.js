@@ -21,7 +21,7 @@ function mostrarProductos(productos) {
     productoLista.innerHTML = ""; 
     productos.forEach(producto => {
         const productoTarjeta = document.createElement("div");
-        productoTarjeta.className = "product-card";
+        productoTarjeta.className = "producto-tarjeta";
         productoTarjeta.innerHTML = `
             <img src="${producto.image}" alt="${producto.name}" width="150">
             <h3>${producto.nombre}</h3>

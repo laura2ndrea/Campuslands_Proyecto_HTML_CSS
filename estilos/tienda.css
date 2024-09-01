@@ -76,19 +76,18 @@ button {
     border: none;
     border-radius: 5px;
 }
-
-#show-cart-btn {
+#mostrar-carrito-boton {
     background-color: #ff66b2;
     color: white;
-    position: fixed; /* Cambiar a fixed para fijarlo en la pantalla */
-    bottom: 20px; /* Espacio desde la parte inferior */
-    right: 20px; /* Espacio desde la parte derecha */
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
     display: flex;
     align-items: center;
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    z-index: 1000; 
 }
 
-button#checkout-btn {
+button#pagar-btn {
     background-color: #ff66b2;
     color: white;
     margin-top: 10px;
@@ -102,19 +101,18 @@ main {
     margin-bottom: 20px;
 }
 
-#filters select {
+#filtros select {
     padding: 10px;
     font-size: 16px;
 }
 
-/* Grid Layout for Products */
-#product-list {
+#producto-lista {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Space between cards */
+    gap: 20px;
 }
 
-.product-card {
+.producto-tarjeta {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
@@ -123,22 +121,22 @@ main {
     position: relative;
 }
 
-.product-card img {
+.producto-tarjeta img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.product-card h3 {
+.producto-tarjeta h3 {
     margin: 10px 0;
 }
 
-.product-card input {
+.producto-tarjeta input {
     width: 60px;
     text-align: center;
 }
 
-.product-card .quantity-available {
+.producto-tarjeta .cantidad-disponible {
     color: #555;
     font-size: 14px;
 }
@@ -158,7 +156,7 @@ main {
     justify-content: center;
 }
 
-.modal-content {
+.modal-contenido {
     background-color: white;
     margin: 15% auto;
     padding: 20px;
@@ -169,21 +167,21 @@ main {
     position: relative;
 }
 
-.close {
+.cerrar {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.cerrar:hover,
+.cerrar:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-.cart-item button {
+.carrito-item button {
     background-color: #ff6666;
     color: white;
     border: none;
@@ -194,17 +192,13 @@ main {
     margin-left: 10px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
-    #product-list {
-        grid-template-columns: 1fr; /* Stack products in a single column */
+    #producto-lista {
+        grid-template-columns: 1fr; 
     }
 }
 
 @media (max-width: 480px) {
-    header {
-        font-size: 14px;
-    }
     button {
         font-size: 14px;
     }
