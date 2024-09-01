@@ -24,6 +24,8 @@ Este proyecto es una landing page dedicada a Sailor Moon, creada como parte de l
 - **creadora.html**: este documento presenta información sobre Naoko Takeuchi, la creadora de Sailor Moon. En el **head**, se incluyen los metadatos esenciales como el juego de caracteres, la configuración de visualización, el icono de la página y la hoja de estilos CSS. En el **body**, hay un contenedor principal que alberga un encabezado **header** con el título "CREADORA" y un enlace a la página de inicio. El contenido está dividido en dos secciones: la izquierda muestra una imagen de Naoko Takeuchi y su nombre, mientras que la derecha contiene tres tarjetas que detallan su biografía, estilo y obra, con imágenes y descripciones en el frente y el reverso de cada tarjeta.
   
 - **galería.html**: este documento muestra una galería de Sailor Moon. En el **head**, se definen los metadatos como el juego de caracteres, la configuración de visualización, el icono de la página y la hoja de estilos CSS. En el **body**, hay un contenedor principal que incluye un encabezado **header** con el título "GALERÍA" y un enlace a la página de inicio. La sección de la galería contiene varios elementos que muestran imágenes y un video relacionado con Sailor Moon, cada uno con su respectivo recurso gráfico.
+
+- **tienda.html**: en este documento se muestran diferentes productos relacionados con Sailor Moon en tres diferentes categorias: juguetes, accesorios y ropa. La página permite simular la compra de diferentes productos y visualizarlos en un carrito de compras, de donde además se pueden eliminar los productos si asi se desea. 
   
 ### Apariencia (CSS) 
   
@@ -77,6 +79,11 @@ Este proyecto es una landing page dedicada a Sailor Moon, creada como parte de l
   
   <img src="/imagenes-readme/galeria-pag.png" width="80%" alt="galeria">
   
+- **tienda.css:** 
+   
+<img src="/imagenes-readme/tienda-pag.png" width="80%" alt="galeria">
+
+  
 - **pantalla no-disponible:** <br><br>
   
 <img src="/recursos/no-disponible.png" width="30%" alt="error">
@@ -87,6 +94,7 @@ Este proyecto es una landing page dedicada a Sailor Moon, creada como parte de l
 
 - **HTML5:** utilizado para estructurar y organizar el contenido de la página web, asegurando que sea semánticamente correcta y accesible.
 - **CSS3:** utilizado para dar estilo y diseño a la página web. Con CSS3, se aplicaron estilos avanzados como transiciones, animaciones, y efectos de transformación. También se implementaron reglas de medios para asegurar que el diseño sea responsive y se adapte a diferentes tamaños de pantalla y dispositivos, proporcionando una experiencia de usuario consistente y atractiva.
+- **JS:** utilizado para crear el funcionamiento de la tienda. 
 
 ---
 <a name="install"></a>
