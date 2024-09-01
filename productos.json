@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "nombre": "Peluche de Sailor Moon",
+        "descripcion": "Peluche de Sailor Moon.",
+        "precio": 20.00,
+        "cantidad": 10,
+        "imagen": "/recursos/productos/producto1.jpg",
+        "categoria": "ropa"
+    },
+    {
+        "id": 2,
+        "nombre": "Camiseta de Luna",
+        "descripcion": "Camiseta de Luna.",
+        "precio": 25.00,
+        "cantidad": 15,
+        "imagen": "/recursos/productos/producto2.jpg",
+        "categoria": "ropa"
+    },
+    {
+        "id": 3,
+        "nombre": "Sudadera de Sailor Moon",
+        "descripcion": "Sudadera de Sailor Moon.",
+        "precio": 30.00,
+        "cantidad": 8,
+        "imagen": "/recursos/productos/producto3.jpg",
+        "categoria": "ropa"
+    },
+    {
+        "id": 4,
+        "nombre": "Llavero de Sailor Moon",
+        "descripcion": "Llavero de Sailor Moon.",
+        "precio": 8.00,
+        "cantidad": 25,
+        "imagen": "/recursos/productos/producto4.jpg",
+        "categoria": "accesorios"
+    },
+    {
+        "id": 5,
+        "nombre": "Collar de Sailor Moon",
+        "descripcion": "Collar de Sailor Moon.",
+        "precio": 15.00,
+        "cantidad": 12,
+        "imagen": "/recursos/productos/producto5.jpg",
+        "categoria": "accesorios"
+    },
+    {
+        "id": 6,
+        "nombre": "Pulsera de Sailor Venus",
+        "descripcion": "Pulsera de Sailor Venus.",
+        "precio": 12.00,
+        "cantidad": 20,
+        "imagen": "/recursos/productos/producto6.jpg",
+        "categoria": "accesorios"
+    },
+    {
+        "id": 7,
+        "nombre": "Póster de Sailor Moon",
+        "descripcion": "Póster de alta calidad de Sailor Moon.",
+        "precio": 10.00,
+        "cantidad": 20,
+        "imagen": "/recursos/productos/producto7.jpg",
+        "categoria": "juguetes"
+    },
+    {
+        "id": 8,
+        "nombre": "Figura de Sailor Jupiter",
+        "descripcion": "Figura de Sailor Jupiter con detalles pintados.",
+        "precio": 30.00,
+        "cantidad": 10,
+        "imagen": "/recursos/productos/producto8.jpg",
+        "categoria": "juguetes"
+    },
+    {
+        "id": 9,
+        "nombre": "Peluche de Artemis",
+        "descripcion": "Peluche de Artemis.",
+        "precio": 18.00,
+        "cantidad": 5,
+        "imagen": "/recursos/productos/producto9.jpg",
+        "categoria": "juguetes"
+    }
+]
